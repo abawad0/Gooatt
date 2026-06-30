@@ -1,0 +1,57 @@
+name: qawwat
+description: "قوّت — تطبيق ذكي لاكتشاف الأطعمة وتقييم الأطباق"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Backend (Supabase recommended for PostgreSQL)
+  supabase_flutter: ^2.5.0
+
+  # Maps (for Food Radar screen)
+  google_maps_flutter: ^2.6.0
+
+  # Push notifications
+  firebase_core: ^2.27.0
+  firebase_messaging: ^14.7.19
+
+  # RTL / Arabic localization
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.19.0
+
+  # Image picking (for Add Review screen)
+  image_picker: ^1.0.7
+
+  # Geolocation (for Food Radar / nearby dishes)
+  geolocator: ^11.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+
+  assets:
+    - assets/images/
